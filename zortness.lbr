@@ -2156,6 +2156,22 @@ Metric Code Size 3216</description>
 <text x="0" y="1.397" size="0.508" layer="51">Y</text>
 <rectangle x1="-0.25" y1="-0.25" x2="0.25" y2="0.25" layer="31"/>
 </package>
+<package name="1X6TERMINALBLOCK">
+<description>&lt;b&gt;1x6 Terminal Block at 0.01" (2.54mm) pitch&lt;/b&gt;&lt;br/&gt;
+&lt;a href="http://www.digikey.com/product-detail/en/282834-5/A98336-ND/1153266"&gt;DigiKey&lt;/a&gt;</description>
+<pad name="3" x="-1.27" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="1.27" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="5" x="3.81" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="6" x="6.35" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="-3.81" y="0" drill="1.016" diameter="1.8796"/>
+<pad name="1" x="-6.35" y="0" drill="1.016" diameter="1.8796"/>
+<wire x1="-7.85" y1="3.25" x2="7.85" y2="3.25" width="0.127" layer="21"/>
+<wire x1="-7.85" y1="3.25" x2="-7.85" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-7.85" y1="-3.25" x2="7.85" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="7.85" y1="-3.25" x2="7.85" y2="3.25" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="2.54" x2="7.62" y2="2.54" width="0.127" layer="21"/>
+<text x="-3.175" y="-2.54" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="GA1A1S202WP">
@@ -2610,29 +2626,45 @@ I&lt;sup&gt;2&lt;/sup&gt;C high performance e-compass, 3d accelerometer, and 3d 
 <pin name="SDA1" x="20.32" y="-55.88" length="middle" rot="R180"/>
 </symbol>
 <symbol name="ADXL377">
-<wire x1="-12" y1="-9" x2="10" y2="-9" width="0.254" layer="94"/>
-<wire x1="10" y1="-9" x2="10" y2="14" width="0.254" layer="94"/>
-<wire x1="10" y1="14" x2="-12" y2="14" width="0.254" layer="94"/>
-<wire x1="-12" y1="14" x2="-12" y2="-9" width="0.254" layer="94"/>
-<pin name="RES$1" x="-14.46" y="7" length="short" direction="nc"/>
-<pin name="ST" x="-14.46" y="4" length="short" direction="in"/>
-<pin name="RES$2" x="-14.46" y="1" length="short" direction="nc"/>
-<pin name="YOUT" x="-14.46" y="-2" length="short" direction="out"/>
-<pin name="XOUT" x="-6" y="-11.46" length="short" direction="out" rot="R90"/>
-<pin name="GND$1" x="-3" y="-11.46" length="short" direction="pwr" rot="R90"/>
-<pin name="GND$2" x="0" y="-11.46" length="short" direction="pwr" rot="R90"/>
-<pin name="NC$1" x="3" y="-11.46" length="short" direction="nc" rot="R90"/>
-<pin name="NC$2" x="12.46" y="-2" length="short" direction="nc" rot="R180"/>
-<pin name="NC$3" x="12.46" y="1" length="short" direction="nc" rot="R180"/>
-<pin name="NC$4" x="12.46" y="4" length="short" direction="nc" rot="R180"/>
-<pin name="NC$5" x="12.46" y="7" length="short" direction="nc" rot="R180"/>
-<pin name="NC$6" x="3" y="16.46" length="short" direction="nc" rot="R270"/>
-<pin name="VS$1" x="0" y="16.46" length="short" direction="pwr" rot="R270"/>
-<pin name="VS$2" x="-3" y="16.46" length="short" direction="pwr" rot="R270"/>
-<pin name="ZOUT" x="-6" y="16.46" length="short" direction="out" rot="R270"/>
+<wire x1="-12.7" y1="-8.89" x2="10.16" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-8.89" x2="10.16" y2="13.97" width="0.254" layer="94"/>
+<wire x1="10.16" y1="13.97" x2="-12.7" y2="13.97" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="13.97" x2="-12.7" y2="-8.89" width="0.254" layer="94"/>
+<pin name="RES@1" x="-15.095" y="7.635" length="short" direction="nc"/>
+<pin name="ST" x="-15.24" y="3.81" length="short" direction="in"/>
+<pin name="RES@2" x="-15.24" y="0" length="short" direction="nc"/>
+<pin name="Y" x="-15.24" y="-3.81" length="short" direction="out"/>
+<pin name="X" x="-7.62" y="-11.43" length="short" direction="out" rot="R90"/>
+<pin name="GND@1" x="-3.81" y="-11.43" length="short" direction="pwr" rot="R90"/>
+<pin name="GND@2" x="0" y="-11.43" length="short" direction="pwr" rot="R90"/>
+<pin name="NC@1" x="3.81" y="-11.43" length="short" direction="nc" rot="R90"/>
+<pin name="NC@2" x="12.7" y="-3.81" length="short" direction="nc" rot="R180"/>
+<pin name="NC@3" x="12.7" y="0" length="short" direction="nc" rot="R180"/>
+<pin name="NC@4" x="12.7" y="3.81" length="short" direction="nc" rot="R180"/>
+<pin name="NC@5" x="12.7" y="7.62" length="short" direction="nc" rot="R180"/>
+<pin name="NC@6" x="3.81" y="16.51" length="short" direction="nc" rot="R270"/>
+<pin name="VS@1" x="0" y="16.51" length="short" direction="pwr" rot="R270"/>
+<pin name="VS@2" x="-3.81" y="16.51" length="short" direction="pwr" rot="R270"/>
+<pin name="Z" x="-7.62" y="16.51" length="short" direction="out" rot="R270"/>
 <circle x="-10" y="12" radius="1" width="0.254" layer="94"/>
 <text x="6" y="17" size="1.27" layer="95">&gt;NAME</text>
 <text x="6" y="-12" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="1X6TERMINALBLOCK">
+<description>&lt;b&gt;1x6 Terminal Block&lt;/b&gt;</description>
+<wire x1="-17.78" y1="7.62" x2="-17.78" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-5.08" x2="17.78" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-5.08" x2="17.78" y2="6.35" width="0.254" layer="94"/>
+<wire x1="17.78" y1="6.35" x2="17.78" y2="7.62" width="0.254" layer="94"/>
+<wire x1="17.78" y1="7.62" x2="-17.78" y2="7.62" width="0.254" layer="94"/>
+<pin name="1" x="-12.7" y="12.7" length="middle" rot="R270"/>
+<pin name="2" x="-7.62" y="12.7" length="middle" rot="R270"/>
+<pin name="3" x="-2.54" y="12.7" length="middle" rot="R270"/>
+<pin name="4" x="2.54" y="12.7" length="middle" rot="R270"/>
+<pin name="5" x="7.62" y="12.7" length="middle" rot="R270"/>
+<pin name="6" x="12.7" y="12.7" length="middle" rot="R270"/>
+<wire x1="-17.526" y1="6.35" x2="17.78" y2="6.35" width="0.254" layer="94"/>
+<text x="-15.24" y="-2.54" size="1.27" layer="95" rot="R90">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3245,22 +3277,44 @@ push-push type</description>
 <devices>
 <device name="" package="LFCSP-16">
 <connects>
-<connect gate="G$1" pin="GND$1" pad="6"/>
-<connect gate="G$1" pin="GND$2" pad="7"/>
-<connect gate="G$1" pin="NC$1" pad="8"/>
-<connect gate="G$1" pin="NC$2" pad="9"/>
-<connect gate="G$1" pin="NC$3" pad="10"/>
-<connect gate="G$1" pin="NC$4" pad="11"/>
-<connect gate="G$1" pin="NC$5" pad="12"/>
-<connect gate="G$1" pin="NC$6" pad="13"/>
-<connect gate="G$1" pin="RES$1" pad="1"/>
-<connect gate="G$1" pin="RES$2" pad="3"/>
+<connect gate="G$1" pin="GND@1" pad="6"/>
+<connect gate="G$1" pin="GND@2" pad="7"/>
+<connect gate="G$1" pin="NC@1" pad="8"/>
+<connect gate="G$1" pin="NC@2" pad="9"/>
+<connect gate="G$1" pin="NC@3" pad="10"/>
+<connect gate="G$1" pin="NC@4" pad="11"/>
+<connect gate="G$1" pin="NC@5" pad="12"/>
+<connect gate="G$1" pin="NC@6" pad="13"/>
+<connect gate="G$1" pin="RES@1" pad="1"/>
+<connect gate="G$1" pin="RES@2" pad="3"/>
 <connect gate="G$1" pin="ST" pad="2"/>
-<connect gate="G$1" pin="VS$1" pad="14"/>
-<connect gate="G$1" pin="VS$2" pad="15"/>
-<connect gate="G$1" pin="XOUT" pad="5"/>
-<connect gate="G$1" pin="YOUT" pad="4"/>
-<connect gate="G$1" pin="ZOUT" pad="16"/>
+<connect gate="G$1" pin="VS@1" pad="14"/>
+<connect gate="G$1" pin="VS@2" pad="15"/>
+<connect gate="G$1" pin="X" pad="5"/>
+<connect gate="G$1" pin="Y" pad="4"/>
+<connect gate="G$1" pin="Z" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1X6TERMINALBLOCK">
+<description>&lt;b&gt;1x6 Terminal Block at 0.01" (2.54mm) pitch&lt;/b&gt;&lt;br/&gt;
+&lt;a href="http://www.digikey.com/product-detail/en/282834-5/A98336-ND/1153266"&gt;DigiKey&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="1X6TERMINALBLOCK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X6TERMINALBLOCK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
