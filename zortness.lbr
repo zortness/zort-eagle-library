@@ -2172,6 +2172,50 @@ Metric Code Size 3216</description>
 <wire x1="-7.62" y1="2.54" x2="7.62" y2="2.54" width="0.127" layer="21"/>
 <text x="-3.175" y="-2.54" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="SOIC16">
+<description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;&lt;p&gt;
+16-Pin (150-Mil) SOIC&lt;br&gt;
+Source: http://www.cypress.com .. 38-12025_0P_V.pdf</description>
+<wire x1="4.79" y1="-1.795" x2="-4.79" y2="-1.795" width="0.2032" layer="51"/>
+<wire x1="-4.79" y1="-1.795" x2="-4.79" y2="1.795" width="0.2032" layer="51"/>
+<wire x1="-4.79" y1="1.795" x2="4.79" y2="1.795" width="0.2032" layer="51"/>
+<wire x1="4.79" y1="1.795" x2="4.79" y2="-1.795" width="0.2032" layer="51"/>
+<circle x="-4.05" y="-0.995" radius="0.3256" width="0.2032" layer="21"/>
+<smd name="2" x="-3.175" y="-2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="13" x="-0.635" y="2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="1" x="-4.445" y="-2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="3" x="-1.905" y="-2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="4" x="-0.635" y="-2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="14" x="-1.905" y="2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="12" x="0.635" y="2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="11" x="1.905" y="2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="6" x="1.905" y="-2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="9" x="4.445" y="2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="5" x="0.635" y="-2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="7" x="3.175" y="-2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="10" x="3.175" y="2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="8" x="4.445" y="-2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="15" x="-3.175" y="2.695" dx="0.635" dy="1.524" layer="1"/>
+<smd name="16" x="-4.445" y="2.695" dx="0.635" dy="1.524" layer="1"/>
+<text x="-5.08" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-3.175" y="-0.635" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-4.6901" y1="-2.921" x2="-4.1999" y2="-1.8951" layer="51"/>
+<rectangle x1="-3.4201" y1="-2.921" x2="-2.9299" y2="-1.8951" layer="51"/>
+<rectangle x1="-2.1501" y1="-2.921" x2="-1.6599" y2="-1.8951" layer="51"/>
+<rectangle x1="-0.8801" y1="-2.921" x2="-0.3899" y2="-1.8951" layer="51"/>
+<rectangle x1="0.3899" y1="-2.921" x2="0.8801" y2="-1.8951" layer="51"/>
+<rectangle x1="1.6599" y1="-2.921" x2="2.1501" y2="-1.8951" layer="51"/>
+<rectangle x1="2.9299" y1="-2.921" x2="3.4201" y2="-1.8951" layer="51"/>
+<rectangle x1="4.1999" y1="-2.921" x2="4.6901" y2="-1.8951" layer="51"/>
+<rectangle x1="4.1999" y1="1.8951" x2="4.6901" y2="2.921" layer="51"/>
+<rectangle x1="2.9299" y1="1.8951" x2="3.4201" y2="2.921" layer="51"/>
+<rectangle x1="1.6599" y1="1.8951" x2="2.1501" y2="2.921" layer="51"/>
+<rectangle x1="0.3899" y1="1.8951" x2="0.8801" y2="2.921" layer="51"/>
+<rectangle x1="-0.8801" y1="1.8951" x2="-0.3899" y2="2.921" layer="51"/>
+<rectangle x1="-2.1501" y1="1.8951" x2="-1.6599" y2="2.921" layer="51"/>
+<rectangle x1="-3.4201" y1="1.8951" x2="-2.9299" y2="2.921" layer="51"/>
+<rectangle x1="-4.6901" y1="1.8951" x2="-4.1999" y2="2.921" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="GA1A1S202WP">
@@ -2665,6 +2709,34 @@ I&lt;sup&gt;2&lt;/sup&gt;C high performance e-compass, 3d accelerometer, and 3d 
 <pin name="6" x="12.7" y="12.7" length="middle" rot="R270"/>
 <wire x1="-17.526" y1="6.35" x2="17.78" y2="6.35" width="0.254" layer="94"/>
 <text x="-15.24" y="-2.54" size="1.27" layer="95" rot="R90">&gt;NAME</text>
+</symbol>
+<symbol name="CD4050">
+<description>&lt;B&gt;CD4050 Hex Converter Buffer&lt;/b&gt;&lt;br/&gt;
+&lt;a href="http://www.digikey.com/product-detail/en/CD4050BDWR/296-14270-1-ND/528349"&gt;DigiKey&lt;/a&gt;&lt;br/&gt;
+VSS: 3-18V&lt;br/&gt;
+VIN Max: 20V&lt;br/&gt;</description>
+<wire x1="-10.16" y1="16.51" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="16.51" width="0.254" layer="94"/>
+<wire x1="10.16" y1="16.51" x2="-10.16" y2="16.51" width="0.254" layer="94"/>
+<pin name="VCC" x="-12.7" y="13.97" length="short" direction="pwr"/>
+<pin name="AOUT" x="-12.7" y="10.16" length="short" direction="out"/>
+<pin name="AIN" x="-12.7" y="6.35" length="short" direction="in"/>
+<pin name="BOUT" x="-12.7" y="2.54" length="short" direction="out"/>
+<pin name="BIN" x="-12.7" y="-1.27" length="short" direction="in"/>
+<pin name="COUT" x="-12.7" y="-5.08" length="short" direction="out"/>
+<pin name="CIN" x="-12.7" y="-8.89" length="short" direction="in"/>
+<pin name="VSS" x="-12.7" y="-12.7" length="short" direction="pwr"/>
+<pin name="DIN" x="12.7" y="-12.7" length="short" direction="in" rot="R180"/>
+<pin name="DOUT" x="12.7" y="-8.89" length="short" direction="out" rot="R180"/>
+<pin name="EIN" x="12.7" y="-5.08" length="short" direction="in" rot="R180"/>
+<pin name="EOUT" x="12.7" y="-1.27" length="short" direction="out" rot="R180"/>
+<pin name="NC@1" x="12.7" y="2.54" length="short" direction="nc" rot="R180"/>
+<pin name="FIN" x="12.7" y="6.35" length="short" direction="in" rot="R180"/>
+<pin name="FOUT" x="12.7" y="10.16" length="short" direction="out" rot="R180"/>
+<pin name="NC@2" x="12.7" y="13.97" length="short" direction="nc" rot="R180"/>
+<text x="-5.08" y="17.78" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-17.78" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3315,6 +3387,40 @@ push-push type</description>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CD4050">
+<description>&lt;B&gt;CD4050 Hex Converter Buffer&lt;/b&gt;&lt;br/&gt;
+&lt;a href="http://www.digikey.com/product-detail/en/CD4050BDWR/296-14270-1-ND/528349"&gt;DigiKey&lt;/a&gt;&lt;br/&gt;
+VSS: 3-18V&lt;br/&gt;
+VIN Max: 20V&lt;br/&gt;</description>
+<gates>
+<gate name="G$1" symbol="CD4050" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC16">
+<connects>
+<connect gate="G$1" pin="AIN" pad="3"/>
+<connect gate="G$1" pin="AOUT" pad="2"/>
+<connect gate="G$1" pin="BIN" pad="5"/>
+<connect gate="G$1" pin="BOUT" pad="4"/>
+<connect gate="G$1" pin="CIN" pad="7"/>
+<connect gate="G$1" pin="COUT" pad="6"/>
+<connect gate="G$1" pin="DIN" pad="9"/>
+<connect gate="G$1" pin="DOUT" pad="10"/>
+<connect gate="G$1" pin="EIN" pad="11"/>
+<connect gate="G$1" pin="EOUT" pad="12"/>
+<connect gate="G$1" pin="FIN" pad="14"/>
+<connect gate="G$1" pin="FOUT" pad="15"/>
+<connect gate="G$1" pin="NC@1" pad="13"/>
+<connect gate="G$1" pin="NC@2" pad="16"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
